@@ -1,1 +1,50 @@
-# Examen-final-prog-internet
+# LaLiga Manager Pro ⚽
+
+Bienvenido a **LaLiga Manager Pro**, un sistema integral de gestión deportiva diseñado bajo criterios de arquitectura profesional para el manejo de equipos, jugadores y cuerpo técnico de la Liga Española.
+
+## 🏛️ Arquitectura del Proyecto
+
+Este proyecto implementa dos pilares fundamentales de la ingeniería de software:
+
+1.  **Modelo-Vista-Controlador (MVC)**:
+    *   **Model**: Entidades C# en el backend que representan la estructura de datos (Equipos, Jugadores, Staff).
+    *   **View**: Componentes de React en el frontend que sirven de interfaz para el usuario final.
+    *   **Controller**: Endpoints de API en C# que procesan las peticiones y orquestan la comunicación.
+2.  **Cliente-Servidor**:
+    *   **Cliente**: Aplicación SPA (Single Page Application) desarrollada con **React + TypeScript + Vite**.
+    *   **Servidor**: Backend robusto con **ASP.NET Core 9.0** y base de datos relacional **PostgreSQL**.
+
+## 🛠️ Tecnologías Utilizadas
+
+*   **Backend**: C# .NET 9.0, Entity Framework Core (Npgsql).
+*   **Frontend**: React 18, TypeScript, Custom Premium CSS (Premium UI / Glassmorphism).
+*   **Base de Datos**: PostgreSQL 15.
+*   **Contenerización**: Docker & Docker Compose.
+
+## 🚀 Cómo Ejecutar el Proyecto
+
+El proyecto está completamente orquestado para que puedas desplegarlo con un solo comando. Sigue estos pasos:
+
+1.  **Clonar el repositorio** y situarse en la raíz del mismo.
+2.  **Ejecutar Docker Compose**:
+    ```bash
+    docker-compose up -d --build
+    ```
+3.  **Esperar la inicialización**: El sistema aplicará las migraciones de base de datos y poblará los datos iniciales (Seed) de forma automática.
+
+## 🔗 Enlaces de Acceso
+
+Una vez que los contenedores estén en estado `Running`, podrás acceder a:
+
+*   **Frontend**: [http://localhost:4000](http://localhost:4000) (Gestión Visual)
+*   **Backend API**: [http://localhost:5000](http://localhost:5000)
+*   **Swagger Docs**: [http://localhost:5000/swagger](http://localhost:5000/swagger)
+
+## ✨ Características Especiales
+
+*   **Seeding Automático**: Al iniciar por primera vez, el sistema se precarga con los 5 equipos principales de La Liga, sus jugadores estrella (Mbappé, Yamal, Griezmann, etc.) y sus respectivos entrenadores.
+*   **Diseño Premium**: Interfaz moderna con modo oscuro, efectos de desenfoque (Glassmorphism) y animaciones fluidas.
+*   **Validaciones**: Backend tipado y frontend con validaciones de formulario para garantizar la integridad de los datos deportivos.
+
+---
+*Este proyecto fue desarrollado íntegramente como Examen Final siguiendo los lineamientos de arquitectura MVC y Cliente-Servidor.*
