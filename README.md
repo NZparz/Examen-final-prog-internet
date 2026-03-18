@@ -2,7 +2,17 @@
 
 Bienvenido a **LaLiga Manager Pro**, un sistema integral de gestión deportiva diseñado bajo criterios de arquitectura profesional para el manejo de equipos, jugadores y cuerpo técnico de la Liga Española.
 
-##  Arquitectura del Proyecto
+##  Capturas de Pantalla
+
+A continuación, se muestran algunas vistas destacadas del proyecto:
+<img src="imagenes/image.png" style=" margin-right:20px" width="800">
+
+<img src="imagenes/image copy.png" style=" margin-right:20px" width="800">
+
+<img src="imagenes/image copy 2.png" style=" margin-right:20px" width="800">
+
+
+## Arquitectura del Proyecto
 
 Este proyecto implementa dos pilares fundamentales de la ingeniería de software:
 
