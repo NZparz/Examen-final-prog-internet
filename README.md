@@ -1,4 +1,4 @@
-# LaLiga Manager Pro ⚽
+# LaLiga Manager Pro 
 
 Bienvenido a **LaLiga Manager Pro**, un sistema integral de gestión deportiva diseñado bajo criterios de arquitectura profesional para el manejo de equipos, jugadores y cuerpo técnico de la Liga Española.
 
@@ -21,7 +21,7 @@ Este proyecto implementa dos pilares fundamentales de la ingeniería de software
 *   **Base de Datos**: PostgreSQL 15.
 *   **Contenerización**: Docker & Docker Compose.
 
-## 🚀 Cómo Ejecutar el Proyecto
+##  Cómo Ejecutar el Proyecto
 
 El proyecto está completamente orquestado para que puedas desplegarlo con un solo comando. Sigue estos pasos:
 
@@ -32,7 +32,7 @@ El proyecto está completamente orquestado para que puedas desplegarlo con un so
     ```
 3.  **Esperar la inicialización**: El sistema aplicará las migraciones de base de datos y poblará los datos iniciales (Seed) de forma automática.
 
-## 🔗 Enlaces de Acceso
+##  Enlaces de Acceso
 
 Una vez que los contenedores estén en estado `Running`, podrás acceder a:
 
@@ -40,7 +40,7 @@ Una vez que los contenedores estén en estado `Running`, podrás acceder a:
 *   **Backend API**: [http://localhost:5000](http://localhost:5000)
 *   **Swagger Docs**: [http://localhost:5000/swagger](http://localhost:5000/swagger)
 
-## ✨ Características Especiales
+##  Características Especiales
 
 *   **Seeding Automático**: Al iniciar por primera vez, el sistema se precarga con los 5 equipos principales de La Liga, sus jugadores estrella (Mbappé, Yamal, Griezmann, etc.) y sus respectivos entrenadores.
 *   **Diseño Premium**: Interfaz moderna con modo oscuro, efectos de desenfoque (Glassmorphism) y animaciones fluidas.
