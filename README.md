@@ -2,7 +2,7 @@
 
 Bienvenido a **LaLiga Manager Pro**, un sistema integral de gestión deportiva diseñado bajo criterios de arquitectura profesional para el manejo de equipos, jugadores y cuerpo técnico de la Liga Española.
 
-## 🏛️ Arquitectura del Proyecto
+##  Arquitectura del Proyecto
 
 Este proyecto implementa dos pilares fundamentales de la ingeniería de software:
 
@@ -14,23 +14,43 @@ Este proyecto implementa dos pilares fundamentales de la ingeniería de software
     *   **Cliente**: Aplicación SPA (Single Page Application) desarrollada con **React + TypeScript + Vite**.
     *   **Servidor**: Backend robusto con **ASP.NET Core 9.0** y base de datos relacional **PostgreSQL**.
 
-## 🛠️ Tecnologías Utilizadas
+##  Tecnologías Utilizadas
 
 *   **Backend**: C# .NET 9.0, Entity Framework Core (Npgsql).
 *   **Frontend**: React 18, TypeScript, Custom Premium CSS (Premium UI / Glassmorphism).
 *   **Base de Datos**: PostgreSQL 15.
 *   **Contenerización**: Docker & Docker Compose.
 
-##  Cómo Ejecutar el Proyecto
+##  Cómo Ejecutar el Proyecto (Paso a Paso)
 
-El proyecto está completamente orquestado para que puedas desplegarlo con un solo comando. Sigue estos pasos:
+El proyecto está diseñado para ser desplegado de forma sencilla mediante contenedores. Sigue estos pasos detallados:
 
-1.  **Clonar el repositorio** y situarse en la raíz del mismo.
-2.  **Ejecutar Docker Compose**:
-    ```bash
-    docker-compose up -d --build
-    ```
-3.  **Esperar la inicialización**: El sistema aplicará las migraciones de base de datos y poblará los datos iniciales (Seed) de forma automática.
+### 1. Requisitos Previos
+Asegúrate de tener instalado en tu sistema:
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
+
+### 2. Preparación del Entorno
+Sitúate en la carpeta raíz del proyecto donde se encuentra el archivo `docker-compose.yml`:
+```bash
+cd Examen-final-prog-internet
+```
+
+### 3. Construcción y Despliegue
+Ejecuta el siguiente comando para construir las imágenes y levantar los servicios en segundo plano:
+```bash
+docker-compose up -d --build
+```
+
+### 4. Verificación de los Contenedores
+Puedes verificar que los 3 servicios están corriendo correctamente con el comando:
+```bash
+docker ps
+```
+Deberías ver los contenedores `sport_frontend_app`, `sport_backend_api` y `postgres_sportdb` en estado "Up".
+
+### 5. Inicialización de Datos
+No es necesario realizar ninguna acción manual en la base de datos. El backend aplicará automáticamente las **migraciones de Entity Framework** y realizará un **Seeding** (carga inicial) de los equipos, jugadores y cuerpo técnico de La Liga en cuanto el servicio esté listo.
 
 ##  Enlaces de Acceso
 
